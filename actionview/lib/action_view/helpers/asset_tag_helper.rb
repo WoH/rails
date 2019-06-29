@@ -95,6 +95,9 @@ module ActionView
           tag_options = {
             "src" => href
           }.merge!(options)
+
+          byebug
+
           if tag_options["nonce"] == true
             tag_options["nonce"] = content_security_policy_nonce
           end
